@@ -8,6 +8,7 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
+  const [dateTime, setDateTime] = useState(new Date()); // New state for date & time
 
   const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
@@ -38,7 +39,7 @@ function App() {
         setLoading(false);
       }
     },
-    [API_KEY] // Dependency for useCallback
+    [API_KEY]
   );
 
   // Load last searched city when app mounts
@@ -48,11 +49,26 @@ function App() {
       setCity(lastCity);
       fetchWeather(lastCity);
     }
-  }, [fetchWeather]); // No ESLint warning now
+  }, [fetchWeather]);
+
+  // Update dateTime every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setDateTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(timer); // Cleanup on unmount
+  }, []);
 
   return (
     <div className="app">
       <h1>🌤 Weather App</h1>
+      
+      {/* Display current date and time */}
+      <p className="date-time">
+        {dateTime.toLocaleDateString()} {dateTime.toLocaleTimeString()}
+      </p>
+
       <SearchBar city={city} setCity={setCity} fetchWeather={fetchWeather} />
       <WeatherDisplay weather={weather} loading={loading} error={error} />
     </div>
