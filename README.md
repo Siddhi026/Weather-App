@@ -1,5 +1,8 @@
 # Weather App – Project Overview
 
+## Live Demo
+- Check out the live app here: [Weather App Live Demo](https://weather-app-tl1w.vercel.app/)
+
 ## Description
 - Single-page React app to fetch and display **current weather** of any city using the OpenWeatherMap API.
 - Shows **temperature, humidity, weather condition**, and dynamically updates the **background** based on weather.
