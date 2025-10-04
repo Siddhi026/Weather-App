@@ -1,35 +1,25 @@
-# Weather App
+# Weather App – Project Overview
 
-## Project Description
-A single-page React application that fetches and displays the current weather of any city using the OpenWeatherMap API. The app provides real-time weather information including temperature, humidity, and weather conditions, and it dynamically updates the background based on the current weather.
+## Description
+- Single-page React app to fetch and display **current weather** of any city using the OpenWeatherMap API.
+- Shows **temperature, humidity, weather condition**, and dynamically updates the **background** based on weather.
+- Displays **current date and time**.
 
-Features
+## Features
+- Search weather by **city name**.
+- Display **temperature, humidity, and weather description**.
+- **Dynamic background** changes according to weather.
+- Shows **error messages** if the city is not found.
+- **Remembers last searched city** using `localStorage`.
 
-Search for weather by city name.
+## Technologies Used
+- **React.js** – UI development.
+- **JavaScript (ES6)** – Logic, state management, and API calls.
+- **HTML & CSS** – Structure and styling.
+- **OpenWeatherMap API** – Fetch live weather data.
+- **Node.js & npm** – Development server and package management.
+- **Git & GitHub** – Version control and hosting.
 
-Display temperature, humidity, and weather description.
-
-Dynamic background that changes according to the weather condition.
-
-Shows error messages if the city is not found.
-
-Bonus: Remembers the last searched city using localStorage.
-
-Bonus: Displays current date and time alongside weather information.
-
-Technologies Used
-
-React.js – for building the user interface.
-
-JavaScript (ES6) – for application logic, state management, and API calls.
-
-HTML & CSS – for structure, styling, and responsive design.
-
-OpenWeatherMap API – to fetch live weather data.
-
-Node.js & npm – for running the React development server.
-
-Git & GitHub – version control and project hosting.
 
 ## Setup Instructions (Run Locally)
 1. Clone the repository:
