@@ -1,23 +1,28 @@
-# Weather App
+# Weather App – Project Overview
 
-## Project Description
-A simple single-page **React application** that fetches and displays the **current weather** of any city using the **OpenWeatherMap API**.  
-The app shows temperature, humidity, weather condition, and dynamically updates the background based on the weather.
+## Live Demo
+- Check out the live app here: [Weather App Live Demo](https://weather-app-tl1w.vercel.app/)
+
+## Description
+- Single-page React app to fetch and display **current weather** of any city using the OpenWeatherMap API.
+- Shows **temperature, humidity, weather condition**, and dynamically updates the **background** based on weather.
+- Displays **current date and time**.
 
 ## Features
-- Search for weather by city name
-- Display temperature, humidity, and weather description
-- Dynamic background based on weather condition
-- Shows error messages if the city is not found
-- Bonus: Saves last searched city using localStorage
+- Search weather by **city name**.
+- Display **temperature, humidity, and weather description**.
+- **Dynamic background** changes according to weather.
+- Shows **error messages** if the city is not found.
+- **Remembers last searched city** using `localStorage`.
 
 ## Technologies Used
-- **React.js** – for building the user interface
-- **JavaScript (ES6)** – for logic, state management, and API calls
-- **HTML & CSS** – for structure and styling
-- **OpenWeatherMap API** – to fetch weather data
-- **Node.js & npm** – for running the React development server
-- **Git & GitHub** – version control and project hosting
+- **React.js** – UI development.
+- **JavaScript (ES6)** – Logic, state management, and API calls.
+- **HTML & CSS** – Structure and styling.
+- **OpenWeatherMap API** – Fetch live weather data.
+- **Node.js & npm** – Development server and package management.
+- **Git & GitHub** – Version control and hosting.
+
 
 ## Setup Instructions (Run Locally)
 1. Clone the repository:
